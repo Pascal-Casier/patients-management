@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+{% block title %}Tratamentos{% endblock %}
+{% block content %}
+
+<div class="container">
+    <h1 class="text-center"> <u>Tratamento</u></h1>
+    
+    <form class="row g-3">
+        <div class="col-md-1">
+            <label for="inputEmail4" class="form-label">Id</label>
+            <input type="email" class="form-control" id="inputEmail4">
+            </div>
+        <div class="col-md-3">
+        <label for="inputEmail4" class="form-label">Nome</label>
+        <input type="email" class="form-control" id="inputEmail4" name="name">
+        </div>
+        <div class="col-md-2">
+        <label for="inputPassword4" class="form-label">Data</label>
+        <input type="date" class="form-control" id="inputPassword4" name="date">
+        </div>
+        <div class="col-6">
+        <label for="inputAddress" class="form-label">Queixa</label>
+        <input type="text" class="form-control" id="inputAddress" name="queixa">
+        </div>
+        <div class="col-6">
+        <label for="inputAddress2" class="form-label">Como começou</label>
+        <input type="text" class="form-control" id="inputAddress2" name="how">
+        </div>
+        <div class="col-md-6">
+        <label for="inputCity" class="form-label">Onde</label>
+        <input type="text" class="form-control" id="inputCity" name="where">
+        </div>
+        <div class="col-md-6">
+            <label for="inputCity" class="form-label">Exames</label>
+            <input type="text" class="form-control" id="inputCity" name="exams">
+        </div>
+        <div class="col-md-6">
+            <label for="inputCity" class="form-label">Antecedentes</label>
+            <input type="text" class="form-control" id="inputCity" name="antecedents">
+        </div>
+        <div class="col-md-4">
+            <label for="inputCity" class="form-label">Remedios</label>
+            <input type="text" class="form-control" id="inputCity" name="medicaments">
+        </div>
+        <div class="col-md-6">
+            <label for="inputCity" class="form-label">Tratamentos precedentes</label>
+            <input type="text" class="form-control" id="inputCity" name="tttprecedents">
+        </div>
+        
+        <div class="col-md-2">
+        <label for="inputState" class="form-label">Sono</label>
+        <select id="inputState" class="form-select">
+            <option selected>Bom</option>
+            <option>Médio</option>
+            <option>Ruim</option>
+        </select>
+        </div>
+     
+        <div class="col-md-6">
+            <label for="inputZip" class="form-label">Movimentos provocando a dor</label>
+            <input type="text" class="form-control" id="inputZip" name="mvts">
+        </div>
+        <div class="col-md-6">
+            <label for="inputZip" class="form-label">Irradiações</label>
+            <input type="text" class="form-control" id="inputZip" name="irradiations">
+        </div>
+        <div class="col-md-12">
+            <label for="textarea" class="form-label">Conclusão - Tratamento</label>
+            <textarea class="form-control" aria-label="With textarea" id="textarea" name="ccl"></textarea>
+        </div>
+       
+        <div class="col-md-2">
+            <label for="inputPassword4" class="form-label">Data Retorno</label>
+            <input type="date" class="form-control" id="inputPassword4" name="dateR">
+        </div>
+        <div class="col-md-10">
+            <label for="textarea" class="form-label">Retorno</label>
+            <textarea class="form-control" aria-label="With textarea" id="textarea" name="return"></textarea>
+        </div>
+        <br>
+        <br>
+        <div class="col-12 text-end">
+          <button class="btn btn-success" type="submit">Salvar tratamento</button>
+        </div>
+    </form>
+    <div class="col-md-4">
+        <label for="file" class="form-label">Arquivos</label>
+        <input type="file" class="btn btn-primary" id="file">
+      </div>
+    <br>
+    <br>
+</div>
+{% endblock %}

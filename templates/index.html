@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}Bienvenue{% endblock %}
+
+{% block content %}
+<br>
+<div class="container-fluid text-center p-5 bg-success mb-5" style="border-radius: 35px; width: 85%; background-image: linear-gradient(120deg,#2980b9, #8e44ad);">
+    <h1 style="color: rgb(8, 7, 92); font-weight: 800; margin-bottom: 30px;"><u>Cadastro de Patiente</u></h1>
+    <img src="{{ url_for('static', filename='healthBackGround3.jpg')}}" style="border-radius: 8px; width: 55%; height: 300px;">
+</div>
+
+<footer class="text-center mt-5 bg-light " style="min-height: 50px;">
+    <em>Copyright &copy; Pascal Casier 2021</em> 
+</footer>
+{% endblock %}

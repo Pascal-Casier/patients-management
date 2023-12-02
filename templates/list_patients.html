@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}Patientes{% endblock %}
+{% block content %}
+<p><h1><strong>liste de patients</strong></h1></p>
+<ul class="list-group">
+    {% for patient in patients %}
+        <li class="list-group-item"><a href="patient/{{patient.id}}">{{patient.name}}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

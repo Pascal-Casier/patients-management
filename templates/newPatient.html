@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% block title %}Novo Patiente{% endblock %}
+{% block content %}
+<div class="container">
+    <h1 class="text-center text-decoration-underline">Novo patiente</h1>
+    <br>
+    <form class="row g-3" method="post">
+        <div class="col-md-5">
+          <label for="validationDefault01" class="form-label">Nome completo</label>
+          <input type="text" class="form-control" id="validationDefault01" name="name">
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Profissão</label>
+          <input type="text" class="form-control" id="validationDefault02" name="profession">
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefaultUsername" class="form-label">Data</label>
+          <div class="input-group">
+            <input type="date" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" name="date">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <label for="validationDefault03" class="form-label">Endereço</label>
+          <input type="text" class="form-control" id="validationDefault03" name="adress">
+        </div>
+        <div class="col-md-2">
+          <label for="validationDefault04" class="form-label">Sexo</label>
+          <select class="form-select" id="validationDefault04" name="sex">
+            <option selected disabled value="">Masculino</option>
+            <option>Feminino</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="validationDefault05" class="form-label">Idade</label>
+          <input type="number" class="form-control" id="validationDefault05" name="age" value="40">
+        </div>
+        <div class="col-md-4">
+            <label for="validationDefault03" class="form-label">Celular</label>
+            <input type="text" class="form-control" id="validationDefault03" name="celphone">
+        </div>
+        <div class="col-md-4">
+            <label for="validationDefault03" class="form-label">Tel. fixo</label>
+            <input type="text" class="form-control" id="validationDefault03" name="phone">
+        </div>
+        <div class="col-md-4">
+            <label for="validationDefault03" class="form-label">CPF</label>
+            <input type="text" class="form-control" id="validationDefault03" name="cpf">
+        </div>
+        <div class="col-md-4">
+            <label for="validationDefaultUsername" class="form-label">Email</label>
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+              <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" name="email">
+            </div>
+        </div>
+        <div class="col-md-8">
+            <label for="validationDefault03" class="form-label">Notas</label>
+            <input type="text" class="form-control" id="validationDefault03" name="notes">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="col-12 text-end">
+          <button class="btn btn-success" type="submit">Salvar paciente</button>
+        </div>
+      </form>
+</div>
+
+{% endblock %}
